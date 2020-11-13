@@ -34,6 +34,9 @@ namespace SocialMedia.Services
             }
         }
 
+      
+
+
         // Get post
 
         public IEnumerable<GetPosts> GetPost()
@@ -53,6 +56,8 @@ namespace SocialMedia.Services
                 return query.ToArray();
             }
         }
+
+      
 
     }
 }

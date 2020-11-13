@@ -5,6 +5,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.Http;
+using System.Web.Http.ModelBinding;
 
 namespace SocialMedia.Services
 {
@@ -23,6 +25,7 @@ namespace SocialMedia.Services
             var entity = new Comment()
             {
                 Author = _userId,
+                RepliesId = model.RepliesId,
                 Text = model.Text
             };
 
@@ -32,6 +35,8 @@ namespace SocialMedia.Services
                 return ctx.SaveChanges() == 1;
             }
         }
+
+       
 
         // Get comment
 
