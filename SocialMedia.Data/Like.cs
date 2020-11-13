@@ -13,6 +13,5 @@ namespace SocialMedia.Data
         public int Id { get; set; }
         public Post LikedPost { get; set; }
 
-        public Guid Liker { get; set; }
     }
 }

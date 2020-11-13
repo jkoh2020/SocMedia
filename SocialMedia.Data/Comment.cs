@@ -15,12 +15,12 @@ namespace SocialMedia.Data
         [Required]
         public string Text { get; set; }
         public Guid Author { get; set; }
-        [Required]
-        public int RepliesId { get; set; }
+        
+        [ForeignKey(nameof(PostId))]
+        public int PostId { get; set; }
 
+        public virtual Post Post { get; set; }
 
-        [ForeignKey(nameof(RepliesId))]
-        public virtual Reply Reply { get; set; }
 
 
     }

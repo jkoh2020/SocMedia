@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 namespace SocialMedia.Models
 {
    public class PostACommentOnAPost
+        //Max post length of 5000
     {
         [Required]
         [MaxLength(5000)]
