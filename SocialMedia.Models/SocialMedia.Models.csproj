@@ -57,6 +57,7 @@
     <Compile Include="GetCommentReplies.cs" />
     <Compile Include="GetPostComments.cs" />
     <Compile Include="GetPosts.cs" />
+    <Compile Include="LikeAPost.cs" />
     <Compile Include="PostACommentOnAPost.cs" />
     <Compile Include="PostALikeToAPost.cs" />
     <Compile Include="PostAPost.cs" />
