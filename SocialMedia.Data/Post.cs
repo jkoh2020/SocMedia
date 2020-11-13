@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace SocialMedia.Data
@@ -13,5 +14,6 @@ namespace SocialMedia.Data
         public string Text { get; set; }
 
         public Guid Author { get; set; }
+        public virtual List<Comment> Comments { get; set; } = new List<Comment>();
     }
 }

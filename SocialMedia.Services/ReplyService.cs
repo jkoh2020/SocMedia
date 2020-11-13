@@ -23,6 +23,7 @@ namespace SocialMedia.Services
             var entity = new Reply()
             {
                 Author = _userId,
+                CommentId = model.CommentId,
                 Text = model.Text
             };
 
