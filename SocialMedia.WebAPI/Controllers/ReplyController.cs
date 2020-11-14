@@ -44,8 +44,8 @@ namespace SocialMedia.WebAPI.Controllers
 
         public async Task<IHttpActionResult> GetAll()
         {
-            List<Post> posts = await _context.Posts.ToListAsync();
-            return Ok(posts);
+            List<Reply> replies = await _context.Replies.ToListAsync();
+            return Ok(replies);
         }
 
     }
