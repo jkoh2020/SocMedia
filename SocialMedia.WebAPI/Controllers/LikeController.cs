@@ -43,8 +43,8 @@ namespace SocialMedia.WebAPI.Controllers
 
         public async Task<IHttpActionResult> GetAll()
         {
-            List<Post> posts = await _context.Posts.ToListAsync();
-            return Ok(posts);
+            List<Like> likes = await _context.Likes.ToListAsync();
+            return Ok(likes);
         }
     }
 }
