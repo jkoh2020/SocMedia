@@ -36,8 +36,6 @@ namespace SocialMedia.Services
             }
         }
 
-       
-
         // Get comment
 
         public IEnumerable<GetPostComments> GetComment()

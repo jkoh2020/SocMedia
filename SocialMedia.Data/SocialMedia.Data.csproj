@@ -87,13 +87,9 @@
     <Compile Include="Comment.cs" />
     <Compile Include="IdentityModels.cs" />
     <Compile Include="Like.cs" />
-    <Compile Include="Migrations\202011131633461_InitialCreate.cs" />
-    <Compile Include="Migrations\202011131633461_InitialCreate.Designer.cs">
-      <DependentUpon>202011131633461_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202011132251414_Shut up error.cs" />
-    <Compile Include="Migrations\202011132251414_Shut up error.Designer.cs">
-      <DependentUpon>202011132251414_Shut up error.cs</DependentUpon>
+    <Compile Include="Migrations\202011140336281_first time.cs" />
+    <Compile Include="Migrations\202011140336281_first time.Designer.cs">
+      <DependentUpon>202011140336281_first time.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Post.cs" />
@@ -105,11 +101,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202011131633461_InitialCreate.resx">
-      <DependentUpon>202011131633461_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202011132251414_Shut up error.resx">
-      <DependentUpon>202011132251414_Shut up error.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202011140336281_first time.resx">
+      <DependentUpon>202011140336281_first time.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

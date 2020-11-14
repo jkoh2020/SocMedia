@@ -17,53 +17,31 @@ namespace SocialMedia.WebAPI.Controllers
     public class CommentController : ApiController
     {
         private readonly ApplicationDbContext _context = new ApplicationDbContext();
-        //   private CommentService CreateService()
-        //   {
-        // var userId = Guid.Parse(User.Identity.GetUserId());
-        // var commentService = new CommentService(userId);
-        //     return commentService;
-        //}
-
-
-        // public IHttpActionResult Create(PostACommentOnAPost comment)
-        //  {
-        //    if (!ModelState.IsValid)
-        //         return BadRequest(ModelState);
-        //  var service = CreateService();
-        //       if (!service.CreateComment(comment))
-        //            return InternalServerError();
-
-        //       return Ok(); // 200
-
-        // }
-
-        // Post comment
-
-
-
-        // Create
-        [HttpPost]
-        public async Task<IHttpActionResult> Create(Comment comment)
-        {
-            // return Unauthorized(); // 403
-            if (ModelState.IsValid)
-            {
-                _context.Comments.Add(comment);
-                await _context.SaveChangesAsync();
-                return Ok();
-            }
-
-            return BadRequest(ModelState); // 400
+           private CommentService CreateService()
+           {
+         var userid = Guid.Parse(User.Identity.GetUserId());
+         var commentService = new CommentService(userid);
+             return commentService;
         }
 
+        // Post a comment
+         public IHttpActionResult Create(PostACommentOnAPost comment)
+          {
+            if (!ModelState.IsValid)
+                 return BadRequest(ModelState);
+          var service = CreateService();
+               if (!service.CreateComment(comment))
+                    return InternalServerError();
 
+               return Ok(); // 200
+         }
+               
         // Read
         [HttpGet]
-
         public async Task<IHttpActionResult> GetAll()
         {
-            List<Post> posts = await _context.Posts.ToListAsync();
-            return Ok(posts);
+            List<Comment> comments = await _context.Comments.ToListAsync();
+            return Ok(comments);
         }
     }
 }

@@ -34,9 +34,6 @@ namespace SocialMedia.Services
             }
         }
 
-      
-
-
         // Get post
 
         public IEnumerable<GetPosts> GetPost()

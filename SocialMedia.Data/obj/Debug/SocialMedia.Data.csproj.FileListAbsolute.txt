@@ -33,6 +33,5 @@ C:\ElevenFiftyProjects\Dopey\SocialMedia\SocialMedia.Data\obj\Debug\SocialMedia.
 C:\ElevenFiftyProjects\Dopey\SocialMedia\SocialMedia.Data\obj\Debug\SocialMedia.Data.csproj.CopyComplete
 C:\ElevenFiftyProjects\Dopey\SocialMedia\SocialMedia.Data\obj\Debug\SocialMedia.Data.dll
 C:\ElevenFiftyProjects\Dopey\SocialMedia\SocialMedia.Data\obj\Debug\SocialMedia.Data.pdb
-C:\ElevenFiftyProjects\Dopey\SocialMedia\SocialMedia.Data\obj\Debug\SocialMedia.Data.Migrations.InitialCreate.resources
+C:\ElevenFiftyProjects\Dopey\SocialMedia\SocialMedia.Data\obj\Debug\SocialMedia.Data.Migrations.firsttime.resources
 C:\ElevenFiftyProjects\Dopey\SocialMedia\SocialMedia.Data\obj\Debug\SocialMedia.Data.csproj.GenerateResource.cache
-C:\ElevenFiftyProjects\Dopey\SocialMedia\SocialMedia.Data\obj\Debug\SocialMedia.Data.Migrations.Shutuperror.resources

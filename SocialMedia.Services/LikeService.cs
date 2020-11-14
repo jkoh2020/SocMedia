@@ -16,7 +16,7 @@ namespace SocialMedia.Services
 			_userId = userId;
 		}
 
-		// Posting a comment
+		// Posting like
 
 		public bool LikeAPost(PostALikeToAPost model)
 		{
@@ -32,5 +32,6 @@ namespace SocialMedia.Services
 				return ctx.SaveChanges() == 1;
 			}
 		}
+
 	}
 }

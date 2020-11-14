@@ -24,22 +24,7 @@ namespace SocialMedia.WebAPI.Controllers
             var postService = new PostService(userId);
             return postService;
         }
-
-        // Post
-       // [HttpPost]
-
-        // public async Task<IHttpActionResult> Create(Post post)
-        // {
-        //    if (ModelState.IsValid)
-        //    {
-        //  _context.Posts.Add(post);
-        // await _context.SaveChangesAsync();
-        //         return Ok();
-        // }
-
-        //       return BadRequest(ModelState); // 400
-        // }
-        
+              
         public IHttpActionResult Create(PostAPost post)
         {
             if (!ModelState.IsValid)
@@ -51,10 +36,8 @@ namespace SocialMedia.WebAPI.Controllers
 
         }
 
-
         // Read
         [HttpGet]
-
         public async Task<IHttpActionResult> GetAll()
         {
             List<Post> posts = await _context.Posts.ToListAsync();

@@ -23,7 +23,7 @@ namespace SocialMedia.WebAPI.Controllers
             return likeService;
         }
 
-
+        // Post like
         public IHttpActionResult Create(PostALikeToAPost comment)
         {
             if (!ModelState.IsValid)
@@ -36,15 +36,12 @@ namespace SocialMedia.WebAPI.Controllers
 
         }
 
-
-
         // Read
         [HttpGet]
-
         public async Task<IHttpActionResult> GetAll()
         {
-            List<Post> posts = await _context.Posts.ToListAsync();
-            return Ok(posts);
+            List<Like> likes = await _context.Likes.ToListAsync();
+            return Ok(likes);
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace SocialMedia.Data
@@ -11,7 +12,6 @@ namespace SocialMedia.Data
         public string Title { get; set; }
         [Required]
         public string Text { get; set; }
-
-        public Guid Author { get; set; }
+        public Guid Author { get; set; }  
     }
 }

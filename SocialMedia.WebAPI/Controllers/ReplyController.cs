@@ -24,7 +24,7 @@ namespace SocialMedia.WebAPI.Controllers
             return replyService;
         }
 
-
+        // Post reply
         public IHttpActionResult Create(PostAReplyToAComment comment)
         {
             if (!ModelState.IsValid)
@@ -34,18 +34,14 @@ namespace SocialMedia.WebAPI.Controllers
                 return InternalServerError();
 
             return Ok(); // 200
-
         }
-
-
 
         // Read
         [HttpGet]
-
         public async Task<IHttpActionResult> GetAll()
         {
-            List<Post> posts = await _context.Posts.ToListAsync();
-            return Ok(posts);
+            List<Reply> replies = await _context.Replies.ToListAsync();
+            return Ok(replies);
         }
 
     }

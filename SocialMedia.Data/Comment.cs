@@ -17,11 +17,7 @@ namespace SocialMedia.Data
         public Guid Author { get; set; }
         [Required]
         public int RepliesId { get; set; }
-
-
-        [ForeignKey(nameof(RepliesId))]
-        public virtual Reply Reply { get; set; }
-
-
+             
+       
     }
 }

@@ -17,7 +17,6 @@ namespace SocialMedia.Services
         }
 
         // Post reply
-
         public bool CreateReply(PostAReplyToAComment model)
         {
             var entity = new Reply()
@@ -34,7 +33,6 @@ namespace SocialMedia.Services
         }
 
         // Get reply
-
         public IEnumerable<GetCommentReplies> GetComment()
         {
             using (var ctx = new ApplicationDbContext())
